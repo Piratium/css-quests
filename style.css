@@ -12,7 +12,7 @@ div {
     height: 100px;
 }
 
-.column ~ div {
+.column~div {
     display: block;
     margin-bottom: 20px;
 }
