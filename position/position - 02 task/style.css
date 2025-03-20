@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(255, 184, 223);
+    font-family: "JetBrains Mono", monospace;
+}
+
+div {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+}
+
+.column ~ div {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.one {
+    background-color: rgb(153, 102, 163);
+}
+
+.two {
+    background-color: rgb(164, 148, 233);
+}
+
+.three {
+    background-color: rgb(89, 97, 218);
+}
