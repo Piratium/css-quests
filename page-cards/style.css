@@ -1,0 +1,96 @@
+body {
+    font-family: "roboto", sans-serif;
+    background: no-repeat linear-gradient(0deg, rgb(220, 227, 225), rgb(86, 181, 184));
+}
+
+.cards-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.cards-list .cards-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(227, 240, 238);
+    border-radius: 10px;
+    box-shadow: 0 3px 12px 0px rgb(90, 88, 88);
+    height: 300px;
+    width: 200px;
+    cursor: pointer;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+.cards-list .cards-item:hover {
+    width: 250px;
+    height: 380px;
+}
+
+.cards-list .cards-item .cards-item-name {
+    position: relative;
+    padding-top: 8px;
+    border-radius: 10px 10px 0 0;
+    height: 45px;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    z-index: 1;
+}
+
+.cards-list .cards-item .cards-item-name .circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.circle span {
+    position: relative;
+    font-size: 17px;
+    top: 15px;
+}
+
+.cards-list .cards-item:last-child .circle span {
+    font-size: 22px;
+}
+
+label {
+    position: relative;
+    z-index: 2;
+}
+
+.cards-list .cards-item .cards-item-description {
+    align-self: center;
+}
+
+.cards-list .cards-item .cards-item-description li {
+    margin-bottom: 5px;
+}
+
+.cards-list .cards-item .cards-item-exp {
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+
+.cards-item.guy .cards-item-name, .cards-item.guy .cards-item-name .circle, .cards-item.guy .cards-item-exp {
+    background-color: rgb(174, 219, 248);
+}
+
+
+.cards-item.beta .cards-item-name, .cards-item.beta .cards-item-name .circle, .cards-item.beta .cards-item-exp  {
+    background-color: rgb(45, 161, 238);
+}
+
+.cards-item.sigma .cards-item-name, .cards-item.sigma .cards-item-name .circle, .cards-item.sigma .cards-item-exp {
+    background-color: rgb(5, 8, 8);
+    color: antiquewhite;
+}
