@@ -1,0 +1,9 @@
+.contrast-container {
+    display: flex;
+    flex-direction:column;  
+    justify-self: left; 
+}
+
+.color-box {
+    flex-basis: 60px;
+}
