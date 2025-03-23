@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+    background: linear-gradient(45deg, rgb(122, 234, 209), rgb(20, 130, 133));
+}
+
+.grid-container {
+    display: grid;
+    gap: 30px;
+    position: relative;
+    width: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid-container-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(176, 241, 231);
+    padding: 20px 80px;
+    border-radius: 7px;
+    font-size: 40px;
+    box-shadow: 0 3px 10px 0px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.grid-container-item:hover {
+    transform: scale(1.1);
+}
+
+.teacher {
+    order: 0
+}
+
+.scientist {
+    order: 2
+}
+
+.programmer {
+    grid-area: 1/2/3/2;
+    order: 1;
+}
+
