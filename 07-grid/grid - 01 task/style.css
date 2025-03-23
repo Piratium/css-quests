@@ -1,7 +1,6 @@
 html,body {
     height: 100%;
     background: linear-gradient(180deg, rgb(118, 80, 60), rgb(165, 137, 84));
-
 }
 
 .grid-container {

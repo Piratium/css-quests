@@ -1,0 +1,21 @@
+html,body {
+    height: 100%;
+    background: linear-gradient(180deg, rgb(16, 177, 16), rgb(182, 223, 135));
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px auto minmax(200px,300px);
+    grid-auto-rows: 100px;
+    gap: 10px;
+}
+
+.grid-container-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 119, 29);
+    border: 3px solid rgb(1, 180, 126);
+    border-radius: 10px;
+    font-size: 25px;
+}
