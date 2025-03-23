@@ -1,0 +1,29 @@
+html,body {
+    height: 100%;
+    background: linear-gradient(180deg, rgb(118, 80, 60), rgb(165, 137, 84));
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid-container-item {
+    
+    width: 60px;
+    height: 60px;
+}
+
+.white {
+    background-color: bisque;
+}
+
+.black {
+    background-color: rgb(82, 65, 45);
+}
